@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## CS 4641 Project
 
 You can use the [editor on GitHub](https://github.com/mach33n/song_popularity_ML/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
