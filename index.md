@@ -1,7 +1,7 @@
 # CS 4641 Project
 Spotify is a media streaming platform that allows users to listen to upwards of 60 million songs. Spotify provides users with information about songs like music genre, song length, artist, album. By tallying the number of individual streams of a song (or any piece of media), Spotify also provides users (and artists) with a metric of how popular a song is. Behind the scenes, Spotify keeps track of features of songs including modality, “danceability, energy, and tone. We have reason to believe that these features created by spotify are capable of predicting some level of popularity amongst other song titles with similar features. We have examples of analysing these sorts of features to support us [1,4]. 
 
-<img src="https://github.com/mach33n/CS4641-SongPopularity-Project/blob/gh-pages/images/heatmap.png" width="240" height="240">
+<img src="https://github.com/mach33n/CS4641-SongPopularity-Project/blob/gh-pages/images/heatmap.png" width="480" height="480">
 
 # Problem Statement
 Spotify has been an ever improving platform for a while now and currently holds the top spot among audio streaming platforms. Many artists recognize the importance of such a platform and have been utilizing the platform even more to attract listeners and build fanbases. 
