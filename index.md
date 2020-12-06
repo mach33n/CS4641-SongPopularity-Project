@@ -6,7 +6,7 @@ Spotify has been an ever improving platform for a while now and currently holds 
 Given that Spotify measures a large variety of information about the songs on its platform, we intend to investigate how the relationships between these features, both front-facing and not, interweave to affect the popularity of music upon release by predicting the popularity of a song given certain features. These predictive capabilities would be useful for artists and labels looking to optimize their music outputs in an effective way [1]. Though some other sources exist that have intended to achieve a similar goal, we hope to use a combination of unsupervised and supervised learning to achieve a more optimal and accurate analysis.
 
 # Data Collection
-A single Kaggle dataset was used throughout the course of this project midpoint [5]. All steps taken to ensure the data set be properly cleaned and prepared for any machine learning algorithms were taken with respect to how they would assist in solving our problem. The first step taken was to read in our data set as a csv and ensure all data types were properly assigned to each feature. The initial data was described below:
+A single Kaggle dataset was used throughout the course of this project [5]. All steps taken to ensure the data set be properly cleaned and prepared for any machine learning algorithms were taken with respect to how they would assist in solving our problem. The first step taken was to read in our data set as a csv and ensure all data types were properly assigned to each feature. The initial data was described below:
 
 <img src="images/initial_info.JPG" alt="pearson correlation heatmap" class="center" style="width: 360px; height: 360px; margin-left: auto; margin-right: auto; display: block;"/>
 
@@ -78,7 +78,7 @@ One way to compare each model is to plot the residuals on the same axis. Here we
 
 <img src="images/box_plot.png" alt="nn model summary" class="center" style="width: 480px; height: 360px; margin-left: auto; margin-right: auto; display: block;"/>
 
-As you can see, the decision tree models have the most outliers, with some cores being predicted to be 75+ higher or lower than the actual scores. This shows that although the distribution of predicted scores looked very good for the decision tree models, many data points have been mapped to the complete wrong side of the distribution. 
+As you can see, the decision tree models have the most outliers, with some scores being predicted to be 75+ higher or lower than the actual scores. This shows that although the distribution of predicted scores looked very good for the decision tree models, many data points have been mapped to the complete wrong side of the distribution. 
 
 Linear regression, both the normal and PCA, has a tighter bound among its outliers as expected given the line of best fit will still try to minimize distance with respect to these popularity zero data points. Despite such an attempt, the popularity zero points are heavily underestimated as evidenced by the section of outliers in the -55 to -70 range. Similarly, the high popularity songs are not predicted well either and we have a range of outliers from 25 to 55. Songs with middling popularity are mapped well as linear regression has a small interquartile range and smallest whiskers.
 
