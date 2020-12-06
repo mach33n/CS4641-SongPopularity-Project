@@ -72,6 +72,8 @@ We believe at this stage the neural network has achieved close to its maximum pe
 
 <img src="images/nn_2.png" alt="nn" class="center" style="width: 480px; height: 360px; margin-left: auto; margin-right: auto; display: block;"/>
 
+The histograms of the two neural nets look quite similar. The most significant difference is for the predictions between the 20-65 range as the new model has less prediction error in the middling data points overall and has fewer outliers among these predictions as can be seen by the smaller “twin peaks” at the 37 and 52 score mark in the new model as opposed to the “single” peak for the old model at a score of 38. It is interesting to note that the first neural net predicted scores above 65, albeit quite poorly, but the second neural net never predicted a popularity score greater than 65.
+
 One way to compare each model is to plot the residuals on the same axis. Here we have a box plot showing the residuals (actual value - predicted value) for each model we have trained.
 
 <img src="images/box_plot.png" alt="nn model summary" class="center" style="width: 480px; height: 360px; margin-left: auto; margin-right: auto; display: block;"/>
@@ -84,7 +86,7 @@ The first version of the neural network had somewhat similar results to the deci
 
 The second version of the neural network alleviated some of the mentioned issues given that the new model had the smallest interquartile range, indicating that this was the best model for predicting the middle 50% of the data. However, the model followed a similar trend as the linear regression for the outliers with respect to underestimating and overestimating. 
 
-As an additional metric we wanted to see what percent of test data points the model could accurately predict within 10. We made a metric called “rounded accuracy” to give us a feel of how often our predictions were within ten of our actual values by rounding each point to the nearest 10 and then computing accuracy.
+As an additional metric we wanted to see what percent of test data points the model could accurately predict within 10. We made a metric called “rounded accuracy” to give us a feel of how often our predictions were within ten of our actual values by rounding each point to the nearest 10 and then computing accuracy. 
 
 <img src="images/new_table.png" alt="nn model summary" class="center" style="width: 480px; height: 360px; margin-left: auto; margin-right: auto; display: block;"/>
 
